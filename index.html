@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Luke Armstrong</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Luke Armstrong</div>
+        <div class="hamburger-menu">
+           <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> 
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets\photoColor.JPG" id="my-image" alt="Luke Armstrong picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello I'm</p>
+            <h1> Luke Armstrong</h1>
+            <p class="section__text__p2">Upcoming FrontEnd Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="assets\linkedin.png" 
+                    author="Linkiedin icon created by Pixel perfect"
+                    alt="My Linkedin profile" 
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/in/lukearmstrong2201'"/>
+                <img 
+                    src="assets\github.png"
+                    author="Github icon created by Pixel perfect" 
+                    alt="My Linkedin profile" 
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/in/lukearmstrong2201'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me<h1> 
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="assets\BlackAndWhite.jpg"
+                    class="about-pic"
+                    alt="Profile picture"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                         author="Medal icon by Pixel perfect"
+                         alt="experience icon"
+                         class="icon"/>
+                        <h3>Experience</h3> 
+                        <p>3 years<br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                         author="education icon by Pixel perfect"
+                         alt="education icon"
+                         class="icon"/>
+                        <h3>Education</h3> 
+                        <p>Bsc Bachelors Degree<br />NVQ 3 Mechanical & electrial Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am 32, and i'm on route to becoming a software developer, In my career i am trained as a mechanical/electrical engineer. Recently i have found a love for programming and hope to persue my future career as a developer. I have recently completer my Bachelors degree in computer science, studying via Open University. </p>
+                    <br />
+                    <h3>Hobbies</h3>
+                    <br />
+                    <ul>
+                        <li>Golf</li>
+                        <li>Mountain Biking</li>
+                        <li>Snowboarding</li>
+                        <li>Programming</li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+             alt="down arrow icon"
+             author="Arrow icon by Pixel perfect"
+             class="icon arrow"
+             onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1"> Explore my</p>
+        <h1 class="title"> Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/green tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/green tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/green tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/green tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/yellow tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/red tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>     
+                        </article>
+                    </div>
+                </div>   
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/yellow tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/yellow tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>node.js</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/yellow tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>     
+                        </article>
+                        <article>
+                            <img src="./assets/red tick.png"
+                                 alt="Experience icon"
+                                 class="icon"
+                                 author="checked icon by Pixel perfect "/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>basic</p>
+                            </div>     
+                        </article>
+                        
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+             alt="down arrow icon"
+             author="Arrow icon by Pixel perfect"
+             class="icon arrow"
+             onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/task list.png" 
+                            alt="Task list project"
+                            class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title"> Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Lukearmstrong2201/FileManager.git'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Lukearmstrong2201/FileManager.git'">Live demo</button>
+                    </div>
+                </div>
+            <div class="experience-details-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/calculator.png" 
+                            alt="Calculator project"
+                            class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title"> Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Lukearmstrong2201/Calculator.git'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Lukearmstrong2201/Calculator.git'">Live demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+            alt="down arrow icon"
+            author="Arrow icon by Pixel perfect"
+            class="icon arrow"
+            onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                     alt="Email icon" 
+                     class="icon contact-icon"
+                     author="Email icon by Pixel Perfect">
+                <p><a href=mailto: lukearmstrong2201@hotmail.com>My Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                     alt="Linkedin icon" 
+                     class="icon contact-icon"
+                     author="Linkedin icon by Pixel Perfect">    
+                <p><a href='https://linkedin.com/in/lukearmstrong2201'>LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> Copyright &#169; 2023 Luke Armstrong. All rights reserved.</p>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+</html>
